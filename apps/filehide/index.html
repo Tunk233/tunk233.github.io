@@ -25,22 +25,38 @@
       line-height: 1.7;
     }
     .wrap {
-      position: relative;
       max-width: 720px;
       margin: 0 auto;
       padding: 28px 20px 48px;
     }
-    .topbar {
-      position: absolute;
-      top: 28px;
-      right: 20px;
-      z-index: 1;
+    .title-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .title-row h1 {
+      margin: 0;
+      flex: 1;
+      min-width: 0;
+      font-size: 1.75rem;
+      letter-spacing: 0.02em;
+      line-height: 1.25;
+    }
+    .lang-switch {
+      flex-shrink: 0;
       font-size: 0.9rem;
+      line-height: 1.25;
+      padding-top: 0.35em;
     }
     .lang-switch a {
       color: var(--muted);
       text-decoration: none;
       margin-left: 10px;
+    }
+    .lang-switch a:first-child {
+      margin-left: 0;
     }
     .lang-switch a.active {
       color: var(--accent);
@@ -49,12 +65,6 @@
     .lang-zh { display: none; }
     html[data-lang="zh"] .lang-en { display: none; }
     html[data-lang="zh"] .lang-zh { display: block; }
-    header h1 {
-      margin: 0 0 8px;
-      padding-right: 7.5rem;
-      font-size: 1.75rem;
-      letter-spacing: 0.02em;
-    }
     header .sub {
       color: var(--muted);
       font-size: 0.95rem;
@@ -107,7 +117,9 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="topbar">
+    <div class="title-row">
+      <h1 class="lang-en">FileHide</h1>
+      <h1 class="lang-zh">文件隐藏</h1>
       <div class="lang-switch">
         <a href="?lang=en" data-set-lang="en" class="active">English</a>
         <a href="?lang=zh" data-set-lang="zh">中文</a>
@@ -116,7 +128,6 @@
 
     <div class="lang-en">
       <header>
-        <h1>FileHide</h1>
         <div class="sub">文件隐藏</div>
         <p class="lead">A local tool for hiding files on Android. After you choose folders and grant storage access, you can quickly hide photos, videos, text files, and more.</p>
         <div class="badge">All processing stays on your device — we do not upload your files</div>
@@ -155,7 +166,6 @@
 
     <div class="lang-zh">
       <header>
-        <h1>文件隐藏</h1>
         <div class="sub">FileHide</div>
         <p class="lead">一款用于在安卓手机上本地隐藏文件的工具。选择文件夹并授权存储权限后，即可快速隐藏照片、视频、文本等文件。</p>
         <div class="badge">文件处理均在本机完成，不上传您的文件</div>
