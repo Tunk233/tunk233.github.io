@@ -24,14 +24,16 @@
       line-height: 1.7;
     }
     .wrap {
+      position: relative;
       max-width: 720px;
       margin: 0 auto;
       padding: 28px 20px 48px;
     }
     .topbar {
-      display: flex;
-      justify-content: flex-end;
-      margin-bottom: 16px;
+      position: absolute;
+      top: 28px;
+      right: 20px;
+      z-index: 1;
       font-size: 0.9rem;
     }
     .lang-switch a {
@@ -48,6 +50,7 @@
     html[data-lang="zh"] .lang-zh { display: block; }
     header h1 {
       margin: 0 0 8px;
+      padding-right: 7.5rem;
       font-size: 1.75rem;
       letter-spacing: 0.02em;
     }
