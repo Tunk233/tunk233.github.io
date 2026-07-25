@@ -7,20 +7,21 @@
   <title>FileHide</title>
   <style>
     :root {
-      --bg: #f6f7f9;
-      --card: #ffffff;
-      --text: #1a1d23;
-      --muted: #5c6570;
-      --accent: #2f6fed;
-      --line: #e6e9ef;
-      --ok: #1f8a4c;
+      --bg: #0F1117;
+      --card: #1A1D26;
+      --text: #E8EAED;
+      --muted: #9AA3B2;
+      --accent: #5B8CFF;
+      --line: #2A3040;
+      --ok: #3DDC97;
     }
+    html { color-scheme: dark; }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
       color: var(--text);
-      background: linear-gradient(180deg, #eef3ff 0%, var(--bg) 220px);
+      background: linear-gradient(180deg, #151A28 0%, var(--bg) 220px);
       line-height: 1.7;
     }
     .wrap {
@@ -62,8 +63,9 @@
     }
     .badge {
       display: inline-block;
-      background: #e8f6ee;
+      background: rgba(61, 220, 151, 0.12);
       color: var(--ok);
+      border: 1px solid rgba(61, 220, 151, 0.28);
       border-radius: 6px;
       padding: 4px 10px;
       font-size: 0.85rem;
