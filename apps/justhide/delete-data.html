@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="How to request deletion of JustHide-related data" />
+  <title>Request Data Deletion · JustHide</title>
+  <style>
+    :root {
+      --bg: #0F1117;
+      --card: #1A1D26;
+      --text: #E8EAED;
+      --muted: #9AA3B2;
+      --accent: #5B8CFF;
+      --line: #2A3040;
+    }
+    html { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.75;
+    }
+    .wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 24px 18px 56px;
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      font-size: 0.9rem;
+      flex-wrap: wrap;
+    }
+    .topbar nav a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 12px;
+    }
+    .lang-switch a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    .lang-switch a.active {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .lang-zh { display: none; }
+    html[data-lang="zh"] .lang-en { display: none; }
+    html[data-lang="zh"] .lang-zh { display: block; }
+    h1 { font-size: 1.55rem; margin: 0 0 8px; }
+    .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 20px; }
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px 18px;
+    }
+    h2 {
+      font-size: 1.08rem;
+      margin: 24px 0 10px;
+      padding-top: 4px;
+    }
+    h2:first-of-type { margin-top: 0; }
+    p, li { color: var(--muted); }
+    p { margin: 0 0 12px; }
+    ul, ol { margin: 0 0 12px; padding-left: 1.25em; }
+    li { margin-bottom: 6px; }
+    strong { color: var(--text); font-weight: 600; }
+    a { color: var(--accent); }
+    .cta {
+      display: inline-block;
+      margin: 8px 0 16px;
+      padding: 10px 18px;
+      background: rgba(91, 140, 255, 0.15);
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .cta:hover { background: rgba(91, 140, 255, 0.25); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <nav class="lang-en">
+        <a href="./index.html">About</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+      </nav>
+      <nav class="lang-zh">
+        <a href="./index.html">介绍</a>
+        <a href="./privacy.html">隐私政策</a>
+        <a href="./terms.html">用户服务协议</a>
+      </nav>
+      <div class="lang-switch">
+        <a href="?lang=en" data-set-lang="en" class="active">English</a>
+        <a href="?lang=zh" data-set-lang="zh">中文</a>
+      </div>
+    </div>
+
+    <div class="lang-en">
+      <h1>Request Data Deletion</h1>
+      <p class="meta">Last updated: July 28, 2026 · Effective: July 28, 2026</p>
+      <article>
+        <p>This page explains how you can delete or manage data related to <strong>JustHide</strong> (“App”). It is provided for Google Play and users who wish to exercise data-related rights.</p>
+        <p><strong>Operator:</strong> Independent developer<br />
+        <strong>Contact:</strong> <a href="mailto:wonsupport@126.com">wonsupport@126.com</a></p>
+
+        <h2>1. What Data Exists</h2>
+        <p>JustHide is a <strong>local</strong> utility. We do <strong>not</strong> operate user accounts or store your hidden file contents on our own servers.</p>
+        <ul>
+          <li><strong>On your device:</strong> hide-path settings, indexes, feature toggles, thumbnail cache, optional on-device logs, and locally stored <strong>Pro membership status</strong> (whether you have purchased Pro).</li>
+          <li><strong>Google Play:</strong> If you buy Pro, payment and order records are processed and held by <strong>Google</strong> under your Google account.</li>
+          <li><strong>Firebase Crashlytics (Google):</strong> When the App crashes, diagnostic data (such as stack traces, App version, device model, and OS version) may be sent to Google Firebase to help us fix issues. This does <strong>not</strong> include the contents of files you hide. See the <a href="./privacy.html">Privacy Policy</a> for details.</li>
+        </ul>
+
+        <h2>2. Delete Data Yourself (Recommended)</h2>
+        <ol>
+          <li><strong>Hidden files:</strong> Restore hidden files or remove hide folders in the App before deleting App data, if you still need access to those files.</li>
+          <li><strong>App cache:</strong> Clear image/thumbnail cache in App settings where available.</li>
+          <li><strong>App data:</strong> In Android system settings, use “Clear storage” / “Clear data” for JustHide.</li>
+          <li><strong>Uninstall:</strong> Removes data in the App’s private storage. <strong>Uninstalling does not automatically restore</strong> files you hid on shared storage — restore them in the App first if needed.</li>
+        </ol>
+        <p><strong>Google Play orders:</strong> Manage or delete purchase history via your <a href="https://myaccount.google.com/data-and-privacy" rel="noopener noreferrer">Google Account data &amp; privacy</a> settings and Google Play order history.</p>
+        <p><strong>Crash reports:</strong> Data processed by Google Firebase is subject to <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google’s Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase privacy information</a>.</p>
+
+        <h2>3. Request by Email</h2>
+        <p>If you cannot perform the steps above or applicable law requires us to assist, email us. We will explain what can be deleted on-device versus what is held by Google, and respond within <strong>30 days</strong> where reasonable.</p>
+        <p>Include: App name (JustHide), package name if known, device model (optional), and what you want deleted or corrected.</p>
+        <a class="cta" href="mailto:wonsupport@126.com?subject=JustHide%20Data%20Deletion%20Request">Email: wonsupport@126.com</a>
+
+        <h2>4. What We Cannot Do Remotely</h2>
+        <p>Because we do not host your files or a user database, we cannot remotely erase data on your phone or Google’s systems. Deletion of local App data is performed by you on the device; Google-held purchase and crash data is managed through Google’s tools and policies.</p>
+
+        <h2>5. Related Links</h2>
+        <p>
+          <a href="./index.html">About JustHide</a> ·
+          <a href="./privacy.html">Privacy Policy</a> ·
+          <a href="./terms.html">Terms of Service</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="lang-zh">
+      <h1>请求删除数据</h1>
+      <p class="meta">更新日期：2026 年 7 月 28 日　｜　生效日期：2026 年 7 月 28 日</p>
+      <article>
+        <p>本页说明如何删除或管理与本应用 <strong>JustHide</strong>（「本应用」）相关的数据，供 Google Play 及需要行使数据相关权利的用户查阅。</p>
+        <p><strong>运营主体：</strong>个人开发者<br />
+        <strong>联系邮箱：</strong><a href="mailto:wonsupport@126.com">wonsupport@126.com</a></p>
+
+        <h2>一、涉及哪些数据</h2>
+        <p>本应用为<strong>本地</strong>工具，<strong>不提供</strong>用户账号，也<strong>不会</strong>在开发者自有服务器上存储您隐藏的文件内容。</p>
+        <ul>
+          <li><strong>设备本地：</strong>隐藏路径与状态、功能开关、缩略图缓存、可选本机日志，以及本机保存的 <strong>Pro 会员是否已购买</strong> 等状态。</li>
+          <li><strong>Google Play：</strong>若您购买 Pro，支付与订单由 <strong>Google</strong> 在您 Google 账户体系下处理与保存。</li>
+          <li><strong>Firebase Crashlytics（Google）：</strong>应用崩溃时，可能向 Google Firebase 发送诊断信息（如崩溃堆栈、应用版本、设备型号、系统版本等），用于修复问题；<strong>不包含</strong>您隐藏文件的内容。详见<a href="./privacy.html">《隐私政策》</a>。</li>
+        </ul>
+
+        <h2>二、自行删除（推荐）</h2>
+        <ol>
+          <li><strong>已隐藏文件：</strong>在清除应用数据或卸载前，如需继续使用，请先在应用内恢复隐藏或移除隐藏目录。</li>
+          <li><strong>应用缓存：</strong>在应用设置中清除图片/缩略图缓存（如有该入口）。</li>
+          <li><strong>应用数据：</strong>在系统设置中对 JustHide 执行「清除存储空间/清除数据」。</li>
+          <li><strong>卸载应用：</strong>可删除应用私有目录中的数据；<strong>卸载不会自动恢复</strong>共享存储上已隐藏的文件，请先按需恢复。</li>
+        </ol>
+        <p><strong>Google Play 订单：</strong>可通过 <a href="https://myaccount.google.com/data-and-privacy" rel="noopener noreferrer">Google 账户数据与隐私</a> 及 Play 订单记录进行管理。</p>
+        <p><strong>崩溃报告：</strong>由 Google Firebase 处理的数据适用 <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 隐私政策</a> 与 <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase 隐私说明</a>。</p>
+
+        <h2>三、邮件请求</h2>
+        <p>若您无法自行操作，或适用法律要求我们协助，请发送邮件。我们将说明哪些数据可在本机删除、哪些由 Google 保存，并在合理期限内（一般不超过 <strong>30 日</strong>）答复。</p>
+        <p>建议注明：应用名称 JustHide、包名（如已知）、设备型号（可选）、希望删除或更正的内容。</p>
+        <a class="cta" href="mailto:wonsupport@126.com?subject=JustHide%20Data%20Deletion%20Request">发送邮件：wonsupport@126.com</a>
+
+        <h2>四、无法远程删除的部分</h2>
+        <p>因我们不托管您的文件或用户数据库，无法远程删除您手机上的数据或 Google 系统中的数据。本地数据需您在设备上操作；Google 侧的购买与崩溃相关数据请通过 Google 提供的工具与政策处理。</p>
+
+        <h2>五、相关链接</h2>
+        <p>
+          <a href="./index.html">应用介绍</a> ·
+          <a href="./privacy.html">隐私政策</a> ·
+          <a href="./terms.html">用户服务协议</a>
+        </p>
+      </article>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var KEY = "tunk233_lang";
+      var titles = { en: "Request Data Deletion · JustHide", zh: "请求删除数据 · JustHide" };
+      var descs = {
+        en: "How to request deletion of JustHide-related data",
+        zh: "JustHide 相关数据的删除与管理方式"
+      };
+      function apply(lang) {
+        lang = lang === "zh" ? "zh" : "en";
+        document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+        document.documentElement.setAttribute("data-lang", lang);
+        document.title = titles[lang];
+        var meta = document.querySelector('meta[name="description"]');
+        if (meta) meta.setAttribute("content", descs[lang]);
+        try { localStorage.setItem(KEY, lang); } catch (e) {}
+        document.querySelectorAll("[data-set-lang]").forEach(function (el) {
+          el.classList.toggle("active", el.getAttribute("data-set-lang") === lang);
+        });
+      }
+      function resolve() {
+        var q = new URLSearchParams(location.search).get("lang");
+        if (q === "zh" || q === "en") return q;
+        try {
+          var s = localStorage.getItem(KEY);
+          if (s === "zh" || s === "en") return s;
+        } catch (e) {}
+        return "en";
+      }
+      apply(resolve());
+      document.addEventListener("click", function (e) {
+        var t = e.target.closest("[data-set-lang]");
+        if (!t) return;
+        e.preventDefault();
+        var lang = t.getAttribute("data-set-lang");
+        apply(lang);
+        var url = new URL(location.href);
+        url.searchParams.set("lang", lang);
+        history.replaceState(null, "", url);
+      });
+    })();
+  </script>
+</body>
+</html>
