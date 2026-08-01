@@ -74,6 +74,8 @@
     li { margin-bottom: 6px; }
     strong { color: var(--text); font-weight: 600; }
     a { color: var(--accent); }
+    .links a { margin-right: 14px; text-decoration: none; }
+    .links a:hover { text-decoration: underline; }
     .cta {
       display: inline-block;
       margin: 8px 0 16px;
@@ -168,14 +170,14 @@
         <p>因我们不托管您的文件或用户数据库，无法远程删除您手机上的数据或 Google 系统中的数据。本地数据需您在设备上操作；Google 侧的购买与崩溃相关数据请通过 Google 提供的工具与政策处理。</p>
       </article>
 
-      <section>
+      <article>
         <h2>相关链接</h2>
         <p class="links">
           <a href="./privacy.html">隐私政策</a>
           <a href="./terms.html">用户服务协议</a>
           <a href="mailto:support.won@gmail.com">意见反馈</a>
         </p>
-      </section>
+      </article>
     </div>
   </div>
   <script>
@@ -205,7 +207,8 @@
           var s = localStorage.getItem(KEY);
           if (s === "zh" || s === "en") return s;
         } catch (e) {}
-        return "en";
+        var nav = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+        return /^zh\b/i.test(nav) ? "zh" : "en";
       }
       apply(resolve());
       document.addEventListener("click", function (e) {
