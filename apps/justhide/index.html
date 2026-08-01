@@ -233,7 +233,8 @@
           var s = localStorage.getItem(KEY);
           if (s === "zh" || s === "en") return s;
         } catch (e) {}
-        return "en";
+        var nav = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+        return /^zh\b/i.test(nav) ? "zh" : "en";
       }
       apply(resolve());
       document.addEventListener("click", function (e) {
