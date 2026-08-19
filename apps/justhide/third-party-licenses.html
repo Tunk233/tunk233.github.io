@@ -57,6 +57,37 @@
       min-width: 720px; /* prevent layout spill on small screens */
       table-layout: fixed;
     }
+    .license-cards {
+      margin-top: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .license-card {
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: 12px;
+      padding: 14px 12px;
+    }
+    .license-card-title {
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+    .license-row {
+      margin-bottom: 10px;
+    }
+    .license-row:last-child {
+      margin-bottom: 0;
+    }
+    .license-label {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+    .license-card a {
+      word-break: break-word;
+    }
     th, td {
       border: 1px solid var(--line);
       padding: 10px 10px;
@@ -93,108 +124,205 @@
           repository under the corresponding open-source license.
         </p>
 
-        <div class="responsive-table">
-          <table>
-            <thead>
-              <tr>
-                <th>Library</th>
-                <th>License</th>
-                <th>Project / License link</th>
-              </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td>XXPermissions <span style="color: var(--muted)">(18.6)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/getActivity/XXPermissions">getActivity/XXPermissions</a></td>
-            </tr>
-            <tr>
-              <td>Splitties activities/fragments/views <span style="color: var(--muted)">(3.0.0)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/LouisCAD/Splitties">LouisCAD/Splitties</a></td>
-            </tr>
-            <tr>
-              <td>Gson <span style="color: var(--muted)">(2.14.0)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/google/gson">google/gson</a></td>
-            </tr>
-            <tr>
-              <td>OkHttp BOM <span style="color: var(--muted)">(5.4.0)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/square/okhttp">square/okhttp</a></td>
-            </tr>
-            <tr>
-              <td>Lottie <span style="color: var(--muted)">(6.7.1)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/airbnb/lottie-android">airbnb/lottie-android</a></td>
-            </tr>
-            <tr>
-              <td>AndroidAutoSize <span style="color: var(--muted)">(v1.2.1)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/JessYanCoding/AndroidAutoSize">JessYanCoding/AndroidAutoSize</a></td>
-            </tr>
-            <tr>
-              <td>BaseRecyclerViewAdapterHelper <span style="color: var(--muted)">(3.0.10)</span></td>
-              <td>MIT License</td>
-              <td><a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">CymChad/BaseRecyclerViewAdapterHelper</a></td>
-            </tr>
-            <tr>
-              <td>EasyFloat <span style="color: var(--muted)">(2.0.4)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/princekin-f/EasyFloat">princekin-f/EasyFloat</a></td>
-            </tr>
-            <tr>
-              <td>EventBus <span style="color: var(--muted)">(3.3.1)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/greenrobot/EventBus">greenrobot/EventBus</a></td>
-            </tr>
-            <tr>
-              <td>Spotlight <span style="color: var(--muted)">(2.0.5)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/TakuSemba/Spotlight">TakuSemba/Spotlight</a></td>
-            </tr>
-            <tr>
-              <td>MMKV <span style="color: var(--muted)">(2.4.1)</span></td>
-              <td>BSD 3-Clause License</td>
-              <td><a href="https://github.com/Tencent/MMKV">Tencent/MMKV</a></td>
-            </tr>
-            <tr>
-              <td>Google Play Billing KTX <span style="color: var(--muted)">(9.1.0)</span></td>
-              <td>Android SDK License Agreement</td>
-              <td><a href="https://developer.android.com/studio/terms">Android Developers: SDK Terms</a></td>
-            </tr>
-            <tr>
-              <td>Material Components for Android <span style="color: var(--muted)">(1.14.0)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/material-components/material-components-android">material-components/material-components-android</a></td>
-            </tr>
-            <tr>
-              <td>Coil <span style="color: var(--muted)">(2.7.0)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/coil-kt/coil">coil-kt/coil</a></td>
-            </tr>
-            <tr>
-              <td>PhotoView <span style="color: var(--muted)">(2.3.0)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/Baseflow/PhotoView">Baseflow/PhotoView</a></td>
-            </tr>
-            <tr>
-              <td>Media3 (ExoPlayer / UI / DataSource) <span style="color: var(--muted)">(1.10.1)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/androidx/media">androidx/media (Media3)</a></td>
-            </tr>
-            <tr>
-              <td>Guava (Android flavor) <span style="color: var(--muted)">(33.6.0-android)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/google/guava">google/guava</a></td>
-            </tr>
-            <tr>
-              <td>Firebase Crashlytics <span style="color: var(--muted)">(version via firebase-bom 34.17.0)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/firebase/firebase-android-sdk">firebase/firebase-android-sdk</a></td>
-            </tr>
-            </tbody>
-          </table>
+        <div class="license-cards">
+          <div class="license-card">
+            <div class="license-card-title">XXPermissions <span style="color: var(--muted)">(18.6)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/getActivity/XXPermissions">getActivity/XXPermissions</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Splitties activities/fragments/views <span style="color: var(--muted)">(3.0.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/LouisCAD/Splitties">LouisCAD/Splitties</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Gson <span style="color: var(--muted)">(2.14.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/google/gson">google/gson</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">OkHttp BOM <span style="color: var(--muted)">(5.4.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/square/okhttp">square/okhttp</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Lottie <span style="color: var(--muted)">(6.7.1)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/airbnb/lottie-android">airbnb/lottie-android</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">AndroidAutoSize <span style="color: var(--muted)">(v1.2.1)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/JessYanCoding/AndroidAutoSize">JessYanCoding/AndroidAutoSize</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">BaseRecyclerViewAdapterHelper <span style="color: var(--muted)">(3.0.10)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>MIT License</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">CymChad/BaseRecyclerViewAdapterHelper</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">EasyFloat <span style="color: var(--muted)">(2.0.4)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/princekin-f/EasyFloat">princekin-f/EasyFloat</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">EventBus <span style="color: var(--muted)">(3.3.1)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/greenrobot/EventBus">greenrobot/EventBus</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Spotlight <span style="color: var(--muted)">(2.0.5)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/TakuSemba/Spotlight">TakuSemba/Spotlight</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">MMKV <span style="color: var(--muted)">(2.4.1)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>BSD 3-Clause License</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/Tencent/MMKV">Tencent/MMKV</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Google Play Billing KTX <span style="color: var(--muted)">(9.1.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Android SDK License Agreement</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://developer.android.com/studio/terms">Android Developers: SDK Terms</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Material Components for Android <span style="color: var(--muted)">(1.14.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/material-components/material-components-android">material-components/material-components-android</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Coil <span style="color: var(--muted)">(2.7.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/coil-kt/coil">coil-kt/coil</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">PhotoView <span style="color: var(--muted)">(2.3.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/Baseflow/PhotoView">Baseflow/PhotoView</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Media3 (ExoPlayer / UI / DataSource) <span style="color: var(--muted)">(1.10.1)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/androidx/media">androidx/media (Media3)</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Guava (Android flavor) <span style="color: var(--muted)">(33.6.0-android)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/google/guava">google/guava</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Firebase Crashlytics <span style="color: var(--muted)">(version via firebase-bom 34.17.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">License</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">Project / License link</div>
+              <a href="https://github.com/firebase/firebase-android-sdk">firebase/firebase-android-sdk</a>
+            </div>
+          </div>
         </div>
 
         <p>
@@ -213,108 +341,205 @@
           本页面汇总了在 <code>app/build.gradle</code> 中明确声明的开源库信息。各库的完整授权文本以其代码仓库中对应的开源许可为准。
         </p>
 
-        <div class="responsive-table">
-          <table>
-            <thead>
-              <tr>
-                <th>库</th>
-                <th>许可类型</th>
-                <th>项目/许可证链接</th>
-              </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td>XXPermissions <span style="color: var(--muted)">(18.6)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/getActivity/XXPermissions">getActivity/XXPermissions</a></td>
-            </tr>
-            <tr>
-              <td>Splitties activities/fragments/views <span style="color: var(--muted)">(3.0.0)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/LouisCAD/Splitties">LouisCAD/Splitties</a></td>
-            </tr>
-            <tr>
-              <td>Gson <span style="color: var(--muted)">(2.14.0)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/google/gson">google/gson</a></td>
-            </tr>
-            <tr>
-              <td>OkHttp BOM <span style="color: var(--muted)">(5.4.0)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/square/okhttp">square/okhttp</a></td>
-            </tr>
-            <tr>
-              <td>Lottie <span style="color: var(--muted)">(6.7.1)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/airbnb/lottie-android">airbnb/lottie-android</a></td>
-            </tr>
-            <tr>
-              <td>AndroidAutoSize <span style="color: var(--muted)">(v1.2.1)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/JessYanCoding/AndroidAutoSize">JessYanCoding/AndroidAutoSize</a></td>
-            </tr>
-            <tr>
-              <td>BaseRecyclerViewAdapterHelper <span style="color: var(--muted)">(3.0.10)</span></td>
-              <td>MIT License</td>
-              <td><a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">CymChad/BaseRecyclerViewAdapterHelper</a></td>
-            </tr>
-            <tr>
-              <td>EasyFloat <span style="color: var(--muted)">(2.0.4)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/princekin-f/EasyFloat">princekin-f/EasyFloat</a></td>
-            </tr>
-            <tr>
-              <td>EventBus <span style="color: var(--muted)">(3.3.1)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/greenrobot/EventBus">greenrobot/EventBus</a></td>
-            </tr>
-            <tr>
-              <td>Spotlight <span style="color: var(--muted)">(2.0.5)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/TakuSemba/Spotlight">TakuSemba/Spotlight</a></td>
-            </tr>
-            <tr>
-              <td>MMKV <span style="color: var(--muted)">(2.4.1)</span></td>
-              <td>BSD 3-Clause License</td>
-              <td><a href="https://github.com/Tencent/MMKV">Tencent/MMKV</a></td>
-            </tr>
-            <tr>
-              <td>Google Play Billing KTX <span style="color: var(--muted)">(9.1.0)</span></td>
-              <td>Android SDK License Agreement</td>
-              <td><a href="https://developer.android.com/studio/terms">Android Developers：SDK 使用条款</a></td>
-            </tr>
-            <tr>
-              <td>Material Components for Android <span style="color: var(--muted)">(1.14.0)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/material-components/material-components-android">material-components/material-components-android</a></td>
-            </tr>
-            <tr>
-              <td>Coil <span style="color: var(--muted)">(2.7.0)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/coil-kt/coil">coil-kt/coil</a></td>
-            </tr>
-            <tr>
-              <td>PhotoView <span style="color: var(--muted)">(2.3.0)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/Baseflow/PhotoView">Baseflow/PhotoView</a></td>
-            </tr>
-            <tr>
-              <td>Media3（ExoPlayer / UI / DataSource）<span style="color: var(--muted)">(1.10.1)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/androidx/media">androidx/media（Media3）</a></td>
-            </tr>
-            <tr>
-              <td>Guava（Android 版本）<span style="color: var(--muted)">(33.6.0-android)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/google/guava">google/guava</a></td>
-            </tr>
-            <tr>
-              <td>Firebase Crashlytics <span style="color: var(--muted)">(版本由 firebase-bom 34.17.0 决定)</span></td>
-              <td>Apache License 2.0</td>
-              <td><a href="https://github.com/firebase/firebase-android-sdk">firebase/firebase-android-sdk</a></td>
-            </tr>
-            </tbody>
-          </table>
+        <div class="license-cards">
+          <div class="license-card">
+            <div class="license-card-title">XXPermissions <span style="color: var(--muted)">(18.6)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/getActivity/XXPermissions">getActivity/XXPermissions</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Splitties activities/fragments/views <span style="color: var(--muted)">(3.0.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/LouisCAD/Splitties">LouisCAD/Splitties</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Gson <span style="color: var(--muted)">(2.14.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/google/gson">google/gson</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">OkHttp BOM <span style="color: var(--muted)">(5.4.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/square/okhttp">square/okhttp</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Lottie <span style="color: var(--muted)">(6.7.1)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/airbnb/lottie-android">airbnb/lottie-android</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">AndroidAutoSize <span style="color: var(--muted)">(v1.2.1)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/JessYanCoding/AndroidAutoSize">JessYanCoding/AndroidAutoSize</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">BaseRecyclerViewAdapterHelper <span style="color: var(--muted)">(3.0.10)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>MIT License</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">CymChad/BaseRecyclerViewAdapterHelper</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">EasyFloat <span style="color: var(--muted)">(2.0.4)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/princekin-f/EasyFloat">princekin-f/EasyFloat</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">EventBus <span style="color: var(--muted)">(3.3.1)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/greenrobot/EventBus">greenrobot/EventBus</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Spotlight <span style="color: var(--muted)">(2.0.5)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/TakuSemba/Spotlight">TakuSemba/Spotlight</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">MMKV <span style="color: var(--muted)">(2.4.1)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>BSD 3-Clause License</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/Tencent/MMKV">Tencent/MMKV</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Google Play Billing KTX <span style="color: var(--muted)">(9.1.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Android SDK License Agreement</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://developer.android.com/studio/terms">Android Developers：SDK 使用条款</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Material Components for Android <span style="color: var(--muted)">(1.14.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/material-components/material-components-android">material-components/material-components-android</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Coil <span style="color: var(--muted)">(2.7.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/coil-kt/coil">coil-kt/coil</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">PhotoView <span style="color: var(--muted)">(2.3.0)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/Baseflow/PhotoView">Baseflow/PhotoView</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Media3（ExoPlayer / UI / DataSource）<span style="color: var(--muted)">(1.10.1)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/androidx/media">androidx/media（Media3）</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Guava（Android 版本）<span style="color: var(--muted)">(33.6.0-android)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/google/guava">google/guava</a>
+            </div>
+          </div>
+          <div class="license-card">
+            <div class="license-card-title">Firebase Crashlytics <span style="color: var(--muted)">(版本由 firebase-bom 34.17.0 决定)</span></div>
+            <div class="license-row">
+              <div class="license-label">许可类型</div>
+              <div>Apache License 2.0</div>
+            </div>
+            <div class="license-row">
+              <div class="license-label">项目/许可证链接</div>
+              <a href="https://github.com/firebase/firebase-android-sdk">firebase/firebase-android-sdk</a>
+            </div>
+          </div>
         </div>
 
         <p>
