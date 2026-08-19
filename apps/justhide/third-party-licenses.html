@@ -47,15 +47,30 @@
       border-collapse: collapse;
       margin-top: 12px;
     }
+    .responsive-table {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 6px; /* keep scrollbar from overlapping */
+    }
+    .responsive-table table {
+      min-width: 720px; /* prevent layout spill on small screens */
+      table-layout: fixed;
+    }
     th, td {
       border: 1px solid var(--line);
       padding: 10px 10px;
       vertical-align: top;
+      word-break: break-word;
     }
     th {
       color: var(--text);
       font-weight: 600;
       background: rgba(91, 140, 255, 0.08);
+    }
+    @media (max-width: 430px) {
+      th, td { padding: 8px 8px; font-size: 0.95rem; }
+      .responsive-table table { min-width: 640px; }
     }
     a { color: var(--accent); }
     code {
@@ -78,15 +93,16 @@
           repository under the corresponding open-source license.
         </p>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Library</th>
-              <th>License</th>
-              <th>Project / License link</th>
-            </tr>
-          </thead>
-          <tbody>
+        <div class="responsive-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Library</th>
+                <th>License</th>
+                <th>Project / License link</th>
+              </tr>
+            </thead>
+            <tbody>
             <tr>
               <td>XXPermissions <span style="color: var(--muted)">(18.6)</span></td>
               <td>Apache License 2.0</td>
@@ -177,8 +193,9 @@
               <td>Apache License 2.0</td>
               <td><a href="https://github.com/firebase/firebase-android-sdk">firebase/firebase-android-sdk</a></td>
             </tr>
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+        </div>
 
         <p>
           Note: AndroidX / Jetpack dependencies and transitive libraries follow their own open-source licenses.
@@ -196,15 +213,16 @@
           本页面汇总了在 <code>app/build.gradle</code> 中明确声明的开源库信息。各库的完整授权文本以其代码仓库中对应的开源许可为准。
         </p>
 
-        <table>
-          <thead>
-            <tr>
-              <th>库</th>
-              <th>许可类型</th>
-              <th>项目/许可证链接</th>
-            </tr>
-          </thead>
-          <tbody>
+        <div class="responsive-table">
+          <table>
+            <thead>
+              <tr>
+                <th>库</th>
+                <th>许可类型</th>
+                <th>项目/许可证链接</th>
+              </tr>
+            </thead>
+            <tbody>
             <tr>
               <td>XXPermissions <span style="color: var(--muted)">(18.6)</span></td>
               <td>Apache License 2.0</td>
@@ -295,8 +313,9 @@
               <td>Apache License 2.0</td>
               <td><a href="https://github.com/firebase/firebase-android-sdk">firebase/firebase-android-sdk</a></td>
             </tr>
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+        </div>
 
         <p>
           说明：AndroidX / Jetpack 以及所有传递依赖会遵循其各自的开源协议。如需更完整的许可文本，请以对应仓库与应用包内的授权文件为准。
