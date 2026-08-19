@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Third-party Licenses" />
+  <title>Third-party Licenses · JustHide</title>
+  <style>
+    :root {
+      --bg: #0F1117;
+      --card: #1A1D26;
+      --text: #E8EAED;
+      --muted: #9AA3B2;
+      --accent: #5B8CFF;
+      --line: #2A3040;
+    }
+    html { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.75;
+    }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px 18px 56px;
+    }
+    .lang-zh { display: none; }
+    html[data-lang="zh"] .lang-en { display: none; }
+    html[data-lang="zh"] .lang-zh { display: block; }
+    h1 { font-size: 1.55rem; margin: 0 0 8px; }
+    .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 20px; }
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px 18px;
+      margin-bottom: 16px;
+    }
+    p, li { color: var(--muted); }
+    p { margin: 0 0 12px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 10px;
+      vertical-align: top;
+    }
+    th {
+      color: var(--text);
+      font-weight: 600;
+      background: rgba(91, 140, 255, 0.08);
+    }
+    a { color: var(--accent); }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.95em;
+      color: #C9D4F4;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="lang-en">
+      <h1>Third-party Licenses</h1>
+      <p class="meta">Updated: August 19, 2026</p>
+
+      <article>
+        <p>
+          This page summarizes open-source libraries that are explicitly declared in
+          <code>app/build.gradle</code>. The complete license texts are provided by each library’s
+          repository under the corresponding open-source license.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Library</th>
+              <th>License</th>
+              <th>Project / License link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>XXPermissions <span style="color: var(--muted)">(18.6)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/getActivity/XXPermissions">getActivity/XXPermissions</a></td>
+            </tr>
+            <tr>
+              <td>Splitties activities/fragments/views <span style="color: var(--muted)">(3.0.0)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/LouisCAD/Splitties">LouisCAD/Splitties</a></td>
+            </tr>
+            <tr>
+              <td>Gson <span style="color: var(--muted)">(2.14.0)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/google/gson">google/gson</a></td>
+            </tr>
+            <tr>
+              <td>OkHttp BOM <span style="color: var(--muted)">(5.4.0)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/square/okhttp">square/okhttp</a></td>
+            </tr>
+            <tr>
+              <td>Lottie <span style="color: var(--muted)">(6.7.1)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/airbnb/lottie-android">airbnb/lottie-android</a></td>
+            </tr>
+            <tr>
+              <td>AndroidAutoSize <span style="color: var(--muted)">(v1.2.1)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/JessYanCoding/AndroidAutoSize">JessYanCoding/AndroidAutoSize</a></td>
+            </tr>
+            <tr>
+              <td>BaseRecyclerViewAdapterHelper <span style="color: var(--muted)">(3.0.10)</span></td>
+              <td>MIT License</td>
+              <td><a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">CymChad/BaseRecyclerViewAdapterHelper</a></td>
+            </tr>
+            <tr>
+              <td>EasyFloat <span style="color: var(--muted)">(2.0.4)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/princekin-f/EasyFloat">princekin-f/EasyFloat</a></td>
+            </tr>
+            <tr>
+              <td>EventBus <span style="color: var(--muted)">(3.3.1)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/greenrobot/EventBus">greenrobot/EventBus</a></td>
+            </tr>
+            <tr>
+              <td>Spotlight <span style="color: var(--muted)">(2.0.5)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/TakuSemba/Spotlight">TakuSemba/Spotlight</a></td>
+            </tr>
+            <tr>
+              <td>MMKV <span style="color: var(--muted)">(2.4.1)</span></td>
+              <td>BSD 3-Clause License</td>
+              <td><a href="https://github.com/Tencent/MMKV">Tencent/MMKV</a></td>
+            </tr>
+            <tr>
+              <td>Google Play Billing KTX <span style="color: var(--muted)">(9.1.0)</span></td>
+              <td>Android SDK License Agreement</td>
+              <td><a href="https://developer.android.com/studio/terms">Android Developers: SDK Terms</a></td>
+            </tr>
+            <tr>
+              <td>Material Components for Android <span style="color: var(--muted)">(1.14.0)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/material-components/material-components-android">material-components/material-components-android</a></td>
+            </tr>
+            <tr>
+              <td>Coil <span style="color: var(--muted)">(2.7.0)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/coil-kt/coil">coil-kt/coil</a></td>
+            </tr>
+            <tr>
+              <td>PhotoView <span style="color: var(--muted)">(2.3.0)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/Baseflow/PhotoView">Baseflow/PhotoView</a></td>
+            </tr>
+            <tr>
+              <td>Media3 (ExoPlayer / UI / DataSource) <span style="color: var(--muted)">(1.10.1)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/androidx/media">androidx/media (Media3)</a></td>
+            </tr>
+            <tr>
+              <td>Guava (Android flavor) <span style="color: var(--muted)">(33.6.0-android)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/google/guava">google/guava</a></td>
+            </tr>
+            <tr>
+              <td>Firebase Crashlytics <span style="color: var(--muted)">(version via firebase-bom 34.17.0)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/firebase/firebase-android-sdk">firebase/firebase-android-sdk</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Note: AndroidX / Jetpack dependencies and transitive libraries follow their own open-source licenses.
+          If you need the exact full texts, please refer to the corresponding repositories and the license files inside the app package.
+        </p>
+      </article>
+    </div>
+
+    <div class="lang-zh">
+      <h1>第三方许可证</h1>
+      <p class="meta">更新日期：2026 年 8 月 19 日</p>
+
+      <article>
+        <p>
+          本页面汇总了在 <code>app/build.gradle</code> 中明确声明的开源库信息。各库的完整授权文本以其代码仓库中对应的开源许可为准。
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>库</th>
+              <th>许可类型</th>
+              <th>项目/许可证链接</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>XXPermissions <span style="color: var(--muted)">(18.6)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/getActivity/XXPermissions">getActivity/XXPermissions</a></td>
+            </tr>
+            <tr>
+              <td>Splitties activities/fragments/views <span style="color: var(--muted)">(3.0.0)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/LouisCAD/Splitties">LouisCAD/Splitties</a></td>
+            </tr>
+            <tr>
+              <td>Gson <span style="color: var(--muted)">(2.14.0)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/google/gson">google/gson</a></td>
+            </tr>
+            <tr>
+              <td>OkHttp BOM <span style="color: var(--muted)">(5.4.0)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/square/okhttp">square/okhttp</a></td>
+            </tr>
+            <tr>
+              <td>Lottie <span style="color: var(--muted)">(6.7.1)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/airbnb/lottie-android">airbnb/lottie-android</a></td>
+            </tr>
+            <tr>
+              <td>AndroidAutoSize <span style="color: var(--muted)">(v1.2.1)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/JessYanCoding/AndroidAutoSize">JessYanCoding/AndroidAutoSize</a></td>
+            </tr>
+            <tr>
+              <td>BaseRecyclerViewAdapterHelper <span style="color: var(--muted)">(3.0.10)</span></td>
+              <td>MIT License</td>
+              <td><a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">CymChad/BaseRecyclerViewAdapterHelper</a></td>
+            </tr>
+            <tr>
+              <td>EasyFloat <span style="color: var(--muted)">(2.0.4)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/princekin-f/EasyFloat">princekin-f/EasyFloat</a></td>
+            </tr>
+            <tr>
+              <td>EventBus <span style="color: var(--muted)">(3.3.1)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/greenrobot/EventBus">greenrobot/EventBus</a></td>
+            </tr>
+            <tr>
+              <td>Spotlight <span style="color: var(--muted)">(2.0.5)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/TakuSemba/Spotlight">TakuSemba/Spotlight</a></td>
+            </tr>
+            <tr>
+              <td>MMKV <span style="color: var(--muted)">(2.4.1)</span></td>
+              <td>BSD 3-Clause License</td>
+              <td><a href="https://github.com/Tencent/MMKV">Tencent/MMKV</a></td>
+            </tr>
+            <tr>
+              <td>Google Play Billing KTX <span style="color: var(--muted)">(9.1.0)</span></td>
+              <td>Android SDK License Agreement</td>
+              <td><a href="https://developer.android.com/studio/terms">Android Developers：SDK 使用条款</a></td>
+            </tr>
+            <tr>
+              <td>Material Components for Android <span style="color: var(--muted)">(1.14.0)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/material-components/material-components-android">material-components/material-components-android</a></td>
+            </tr>
+            <tr>
+              <td>Coil <span style="color: var(--muted)">(2.7.0)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/coil-kt/coil">coil-kt/coil</a></td>
+            </tr>
+            <tr>
+              <td>PhotoView <span style="color: var(--muted)">(2.3.0)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/Baseflow/PhotoView">Baseflow/PhotoView</a></td>
+            </tr>
+            <tr>
+              <td>Media3（ExoPlayer / UI / DataSource）<span style="color: var(--muted)">(1.10.1)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/androidx/media">androidx/media（Media3）</a></td>
+            </tr>
+            <tr>
+              <td>Guava（Android 版本）<span style="color: var(--muted)">(33.6.0-android)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/google/guava">google/guava</a></td>
+            </tr>
+            <tr>
+              <td>Firebase Crashlytics <span style="color: var(--muted)">(版本由 firebase-bom 34.17.0 决定)</span></td>
+              <td>Apache License 2.0</td>
+              <td><a href="https://github.com/firebase/firebase-android-sdk">firebase/firebase-android-sdk</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          说明：AndroidX / Jetpack 以及所有传递依赖会遵循其各自的开源协议。如需更完整的许可文本，请以对应仓库与应用包内的授权文件为准。
+        </p>
+      </article>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var KEY = "tunk233_lang";
+      var titles = { en: "Third-party Licenses · JustHide", zh: "第三方许可证 · JustHide" };
+      var descs = { en: "JustHide Third-party Licenses", zh: "JustHide 第三方许可证" };
+      function apply(lang) {
+        lang = lang === "zh" ? "zh" : "en";
+        document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+        document.documentElement.setAttribute("data-lang", lang);
+        document.title = titles[lang];
+        var meta = document.querySelector('meta[name="description"]');
+        if (meta) meta.setAttribute("content", descs[lang]);
+        try { localStorage.setItem(KEY, lang); } catch (e) {}
+        document.querySelectorAll("[data-set-lang]").forEach(function (el) {
+          el.classList.toggle("active", el.getAttribute("data-set-lang") === lang);
+        });
+      }
+      function resolve() {
+        var q = new URLSearchParams(location.search).get("lang");
+        if (q === "zh" || q === "en") return q;
+        try {
+          var s = localStorage.getItem(KEY);
+          if (s === "zh" || s === "en") return s;
+        } catch (e) {}
+        var nav = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+        return /^zh\b/i.test(nav) ? "zh" : "en";
+      }
+      apply(resolve());
+    })();
+  </script>
+</body>
+</html>
+
